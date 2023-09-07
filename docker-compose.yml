@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  helix:
+    build:
+      context: ./
+    ports:
+     - "8010:80"
+    volumes:
+     - ./:/app

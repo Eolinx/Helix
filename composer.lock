@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "13cb8243bdedf335346bcac266bfe4a0",
+    "packages": [
+        {
+            "name": "qybercom/quark",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Qybercom/quark.git",
+                "reference": "ea3f685420796504cdef25efcd9300ed47a65bcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Qybercom/quark/zipball/ea3f685420796504cdef25efcd9300ed47a65bcc",
+                "reference": "ea3f685420796504cdef25efcd9300ed47a65bcc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Quark.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "description": "Quark is a PHP multipurpose framework, designed for using in complex projects",
+            "support": {
+                "issues": "https://github.com/Qybercom/quark/issues",
+                "source": "https://github.com/Qybercom/quark/tree/master"
+            },
+            "time": "2023-09-03T10:51:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "qybercom/quark": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
