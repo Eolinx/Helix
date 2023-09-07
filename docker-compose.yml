@@ -4,6 +4,6 @@ services:
     build:
       context: ./
     ports:
-     - "8010:80"
+     - "8011:80"
     volumes:
      - ./:/app
