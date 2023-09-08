@@ -10,8 +10,8 @@ RUN apk add bash supervisor curl git openssl nginx php8-fpm php8-json php8-cli p
 	chown -R www-data:www-data /var/lib/nginx && \
 	mkdir /var/run/php && chown -R www-data:www-data /var/run/php && \
     ln -s /usr/bin/php8 /bin/php && \
-    cd /root && curl -4 -s https://getcomposer.org/installer | php && alias composer='php composer.phar' && \
+    cd /root && curl -4 -s https://getcomposer.org/installer | php && \
 	chown -R www-data:www-data /app && chmod -R 770 /app && \
-    cd /app && composer install
+    cd /app && php /root/composer.phar install
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
