@@ -31,6 +31,8 @@ class InstallService implements IQuarkTask {
 	 * @return mixed
 	 */
 	public function Task ($argc, $argv) {
+		$env = isset($argv[2]) && $argv[2] == '-e';
+
 		$this->ShellView(
 			'Helix Installation',
 			'Welcome to Helix installation' . "\r\n\r\n" .
@@ -49,14 +51,14 @@ class InstallService implements IQuarkTask {
 		 * @var QuarkModel|Domain $domain
 		 */
 		$domain = new QuarkModel(new Domain());
-		$domain->hostname = \readline();
+		$domain->hostname = $env ? getenv('HERENOUNCE_DOMAIN') : \readline();
 
 		echo "\r\n", 'Enter current Node\'s hostname: ';
 		/**
 		 * @var QuarkModel|Node $nodeCurrent
 		 */
 		$nodeCurrent = new QuarkModel(new Node());
-		$nodeCurrent->hostname = \readline();
+		$nodeCurrent->hostname = $env ? getenv('HERENOUNCE_HOSTNAME') : \readline();
 		$nodeCurrent->domain = $domain;
 
 		echo 'Applying settings... ';
