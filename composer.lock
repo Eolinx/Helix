@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13cb8243bdedf335346bcac266bfe4a0",
+    "content-hash": "30d92d81fecadcb54fc8edc51473f7b8",
     "packages": [
         {
             "name": "qybercom/quark",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Qybercom/quark.git",
-                "reference": "ea3f685420796504cdef25efcd9300ed47a65bcc"
+                "reference": "390301830f3b95cf440156743e9f95a956e54ea3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Qybercom/quark/zipball/ea3f685420796504cdef25efcd9300ed47a65bcc",
-                "reference": "ea3f685420796504cdef25efcd9300ed47a65bcc",
+                "url": "https://api.github.com/repos/Qybercom/quark/zipball/390301830f3b95cf440156743e9f95a956e54ea3",
+                "reference": "390301830f3b95cf440156743e9f95a956e54ea3",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                 "issues": "https://github.com/Qybercom/quark/issues",
                 "source": "https://github.com/Qybercom/quark/tree/master"
             },
-            "time": "2023-09-03T10:51:29+00:00"
+            "time": "2023-09-08T03:05:13+00:00"
         }
     ],
     "packages-dev": [],
